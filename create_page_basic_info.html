@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Canvas</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100">
+  <!-- Navbar -->
+  <nav class="w-full bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Website Name (non-clickable) -->
+      <span class="text-xl font-bold select-none">Wanderlust Canvas</span>
+
+      <!-- Navbar Buttons -->
+      <div class="space-x-3">
+        <button 
+          class="px-4 py-2 border-2 border-blue-400 rounded bg-transparent text-gray-800 hover:bg-black hover:text-white transition">
+          Explore
+        </button>
+        <button 
+          class="px-4 py-2 border-2 border-blue-400 rounded bg-transparent text-gray-800 hover:bg-black hover:text-white transition">
+          Search
+        </button>
+        <button 
+          class="px-4 py-2 border-2 border-blue-600 rounded bg-transparent text-gray-800 hover:bg-blue-700 hover:text-white transition">
+          Create
+        </button>
+        <button 
+          class="px-4 py-2 border-2 border-blue-400 rounded bg-transparent text-gray-800 hover:bg-black hover:text-white transition">
+          Demo Creator
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+    <!-- Tab Buttons -->
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-white px-4 py-2 rounded hover:bg-gray-300 transition">
+        basic Info
+      </button>
+      <a href="attractions.html">
+      <button class="bg-white px-4 py-2 rounded hover:bg-gray-300 transition">
+        Attractions
+      </button>
+      </a>
+      <a href="travels.html"></a>
+      <button class="bg-white px-4 py-2 rounded hover:bg-gray-300 transition">
+        food and dining
+      </button>
+      <a href="travels.html">
+      <button class="bg-white px-4 py-2 rounded hover:bg-gray-300 transition">
+        Travel Tips
+      </button>
+      </a>
+      <a href="photos.html">
+      <button class="bg-white px-4 py-2 rounded hover:bg-gray-300 transition">
+        Photos
+      </button>
+</a>
+    </div>
+
+    <!-- Input Form for Trip Details -->
+    <div class="mt-8 bg-white rounded p-6 shadow">
+      <h3 class="text-xl font-bold mb-4">Enter Trip Details</h3>
+      <form class="space-y-4">
+        <div>
+          <label for="destination" class="block text-gray-700 font-semibold">Destination Name:</label>
+          <input type="text" id="destination" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400
+           bg-[#D8E7CC]" placeholder="Enter destination name">
+        </div>
+        <div>
+          <label for="description" class="block text-gray-700 font-semibold">Description:</label>
+          <textarea id="description" rows="4" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400  bg-[#D8E7CC]" placeholder="Enter description"></textarea>
+        </div>
+        <div>
+          <label for="tripDuration" class="block text-gray-700 font-semibold">Trip Duration:</label>
+          <input type="text" id="tripDuration" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400  bg-[#D8E7CC]" placeholder="Enter trip duration">
+        </div>
+        <div>
+          <label for="approxCost" class="block text-gray-700 font-semibold">Approximation Cost (in USD):</label>
+          <input type="number" id="approxCost" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-[#D8E7CC]" placeholder="Enter cost"  bg-[#d8eeed]>
+        </div>
+        <div>
+          <label for="accomodation" class="block text-gray-700 font-semibold">Accomodation:</label>
+          <input type="text" id="accomodation" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400 bg-[#D8E7CC]" placeholder="Enter accomodation details"  bg-[#d8eeed]>
+        </div>
+        <div class="text-right">
+          <button type="submit" class="px-4 py-2 border-2 border-black rounded bg-transparent text-gray-800 hover:bg-black hover:text-white transition bg-[#D8E7CC]"  bg-[#d8eeed]>
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Optional JavaScript for additional interactivity -->
+  <script>
+    // Example JavaScript can be added here if needed
+  </script>
+</body>
+</html>

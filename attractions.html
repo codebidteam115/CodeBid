@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Must-Visit Attractions Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6 flex items-center justify-center">
+
+  <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Left Column: Must-Visit Attractions -->
+   <!-- Must-Visit Attractions Card -->
+<div class="col-span-2 bg-white p-6 rounded-xl shadow">
+  <h2 class="text-2xl font-bold mb-4">Must-Visit Attractions</h2>
+  <div id="attractionsContainer" class="space-y-4">
+    <div class="bg-white p-4 rounded-xl">
+      <label class="block text-lg font-medium mb-1">Attraction Name:</label>
+      <input type="text"  placeholder="E.g., Eiffel Tower" class="w-full p-2 mb-3 rounded border border-gray-300 bg-[#D8E7CC] focus:outline-none focus:ring-2 focus:ring-[#789C6B] ">
+      <label class="block text-lg font-medium mb-1">Description:</label>
+      <textarea rows="3" placeholder="Describe why this place is a must-visit..." class="w-full p-2 rounded border border-gray-300 bg-[#D8E7CC] focus:outline-none focus:ring-2 focus:ring-[#789C6B] resize-none"></textarea>
+    </div>
+  </div>
+  <button onclick="addAttraction()" class="mt-4 flex items-center gap-2 text-[#789C6B] hover:text-green-700 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 4v16m8-8H4" />
+    </svg>
+    Add another attraction
+  </button>
+</div>
+
+    <!-- Right Column -->
+    <div class="flex flex-col gap-6">
+
+      <!-- Traveller Types -->
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-4">Traveller Types</h3>
+        <div class="flex flex-col space-y-2 text-sm">
+          <label><input type="checkbox" class="mr-2"> Solo Female Traveller</label>
+          <label><input type="checkbox" class="mr-2"> Couples</label>
+          <label><input type="checkbox" class="mr-2"> Group Travellers</label>
+          <label><input type="checkbox" class="mr-2"> Family with Kids</label>
+          <label><input type="checkbox" class="mr-2"> Senior Citizens</label>
+          <label><input type="checkbox" class="mr-2"> Adventure Seekers</label>
+          <label><input type="checkbox" class="mr-2"> Business Travellers</label>
+          <label><input type="checkbox" class="mr-2"> Backpackers</label>
+          <label><input type="checkbox" class="mr-2"> Digital Nomads</label>
+          <label><input type="checkbox" class="mr-2"> Luxury Travellers</label>
+        </div>
+      </div>
+
+      <!-- Publish Blog -->
+      <div class="bg-white p-6 rounded-xl shadow mt-auto">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Publish Your Blog</h3>
+        <p class="text-gray-600 mb-4">Ready to share your experiences with the world?</p>
+        <button class="bg-[#789C6B] hover:bg-green-700 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition">
+          <img src="saveicon .png" alt="Save Icon" class="h-5 w-5">
+          Publish your blog
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+  function addAttraction() {
+  const container = document.getElementById('attractionsContainer');
+  const attraction = document.createElement('div');
+  attraction.className = "bg-white p-4 rounded-xl";
+  attraction.innerHTML = `
+    <label class="block text-lg font-medium mb-1">Attraction Name:</label>
+    <input type="text" placeholder="E.g., Eiffel Tower" class="w-full p-2 mb-3 rounded border border-gray-300 bg-[#D8E7CC] focus:outline-none focus:ring-2 focus:ring-[#789C6B]">
+    <label class="block text-lg font-medium mb-1">Description:</label>
+    <textarea rows="3" placeholder="Describe why this place is a must-visit..." class="w-full p-2 rounded border border-gray-300 bg-[#D8E7CC] focus:outline-none focus:ring-2 focus:ring-[#789C6B] resize-none"></textarea>
+  `;
+  container.appendChild(attraction);
+}
+
+  </script>
+
+</body>
+</html>
