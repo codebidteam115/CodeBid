@@ -1,0 +1,120 @@
+.group {
+  background-color: #ffffff;
+  height: 97px;
+  position: relative;
+  width: 1439px;
+}
+
+.group .overlap-group {
+  background-image: url(https://c.animaapp.com/hh3qe6OI/img/login-rec-1.svg);
+  background-size: 100% 100%;
+  height: 41px;
+  left: 1148px;
+  position: absolute;
+  top: 24px;
+  width: 124px;
+}
+
+.group .text-wrapper {
+  color: #000000;
+  font-family: "Inria Serif", Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  left: 30px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.group .overlap {
+  background-image: url(https://c.animaapp.com/hh3qe6OI/img/explore-rec-1.svg);
+  background-size: 100% 100%;
+  height: 41px;
+  left: 1297px;
+  position: absolute;
+  top: 24px;
+  width: 124px;
+}
+
+.group .div {
+  color: #000000;
+  font-family: "Inria Serif", Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  left: 19px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.group .div-wrapper {
+  background-image: url(https://c.animaapp.com/hh3qe6OI/img/explore-rec-1.svg);
+  background-size: 100% 100%;
+  height: 41px;
+  left: 999px;
+  position: absolute;
+  top: 25px;
+  width: 124px;
+}
+
+.group .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inria Serif", Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  left: 36px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.group .overlap-2 {
+  background-image: url(https://c.animaapp.com/hh3qe6OI/img/explore-rec-1.svg);
+  background-size: 100% 100%;
+  height: 41px;
+  left: 850px;
+  position: absolute;
+  top: 24px;
+  width: 124px;
+}
+
+.group .map {
+  height: 20px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 9px;
+  width: 20px;
+}
+
+.group .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inria Serif", Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  left: 32px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.group .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 32px;
+  letter-spacing: -0.8px;
+  line-height: normal;
+  position: absolute;
+  top: 24px;
+  width: 652px;
+}
