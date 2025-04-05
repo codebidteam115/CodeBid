@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Wanderlust Canvas</h1>
+        <div class="nav-buttons">
+            <button>Explore</button>
+            <button>Search</button>
+            <button>Login</button>
+            <button>Sign up</button>
+        </div>
+    </header>
+
+    <section class="discover">
+        <h2>DISCOVER DESTINATIONS</h2>
+        <div class="search-bar">
+            <input type="text" id="mainSearch" placeholder="WHERE WOULD YOU LIKE TO GO">
+            <button class="search-btn" onclick="performSearch('mainSearch')"><img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt=""></button>
+        </div>
+    </section>
+
+    <section class="destination-section">
+        <div class="filters">
+            <div class="tab-group">
+                <button class="tab active">Popular</button>
+                <button class="tab">Trending</button>
+            </div>
+            <div class="filter-dropdown">
+                <button onclick="toggleFilters()">Filters ⏷</button>
+            
+                <div class="dropdown-content" id="filterMenu">
+                    <label><input type="checkbox"> Solo Travelling</label>
+                    <label><input type="checkbox"> Women Travelling</label>
+                    <label><input type="checkbox"> Adventure Trips</label>
+                    <label><input type="checkbox"> Family Holidays</label>
+                    <label><input type="checkbox"> Romantic Getaways</label>
+                    <label><input type="checkbox"> Budget Travel</label>
+                    <label><input type="checkbox"> Luxury Travel</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="destinationSearch" placeholder="Enter the type of destination">
+            <button class="search-btn" onclick="performSearch('destinationSearch')">
+                <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="">
+            </button>
+        </div>
+<div class="destinations">
+    <div class="destination" data-category="trending">
+        <h3>LONDON</h3>
+        <div class="image-box">
+            <a href="london.html">
+                <img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="London">
+            </a>
+        </div>
+    </div>
+
+    <div class="destination" data-category="trending">
+        <h3>PARIS</h3>
+        <div class="image-box">
+            <a href="paris.html"><img src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="trending">
+        <h3>NEW YORK</h3>
+        <div class="image-box">
+            <a href="new_york.html"><img src="https://images.pexels.com/photos/327505/pexels-photo-327505.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+           
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>TOKYO</h3>
+        <div class="image-box">
+            <a href="tokyo.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWEFZjvpsaagtalpBmI4I3fTjnyV2MRXZwLA&s" alt=""></a>
+           
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>DELHI</h3>
+        <div class="image-box">
+            <a href="delhi.html"><img src="https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>DUBAI</h3>
+        <div class="image-box">
+            <a href="dubai.html">
+                <img src="https://images.pexels.com/photos/3787830/pexels-photo-3787830.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>ROME</h3>
+        <div class="image-box">
+           <a href="rome.html"><img src="https://images.pexels.com/photos/356276/pexels-photo-356276.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>BALI</h3>
+        <div class="image-box">
+            <a href="bali.html"><img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>SYDNEY</h3>
+        <div class="image-box">
+            <a href="sydney.html"><img src="https://images.pexels.com/photos/356807/pexels-photo-356807.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="destination" data-category="popular">
+        <h3>SINGAPORE</h3>
+        <div class="image-box">
+            <a href="singapore.html"><img src="https://images.pexels.com/photos/3997982/pexels-photo-3997982.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></a>
+            
+        </div>
+    </div>
+</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+   
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
+        
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-buttons button:hover {
+    background: #bbb;
+}
+
+.discover h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    /* Abril Fatface is naturally bold */
+    margin-left: 10%;
+    /* Adjust as needed */
+    color: #333;
+}
+
+.discover h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 10%;
+    /* Indent slightly for aesthetics */
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    padding: 8px;
+    background: #17614a;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #ccc;
+}
+
+.search-btn img {
+    width: 20px;
+    /* Set a reasonable width */
+    height: 20px;
+}
+.destination-section {
+    background: #d8eeed;
+    padding: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tab-group {
+    display: flex;
+    gap: 10px;
+}
+
+.filters .tab {
+    padding: 10px 15px;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filters .tab.active {
+    background: black;
+    color: white;
+}
+
+.filter-dropdown button {
+    padding: 10px;
+    border: none;
+    background: #cccccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-dropdown button:hover {
+    background: #bbb;
+}
+
+.destination {
+    background-color:white;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    /* very important */
+}
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures image fills the box nicely */
+    border-radius: 8px;
+    display: block;
+}
+.destination:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.image-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.destination-section {
+    flex: 1;
+    /* take all remaining space */
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.destinations {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+} */
+ .search-btn {
+     background-color: #146C5F;
+     /* Greenish */
+     border: none;
+     border-radius: 8px;
+     padding: 10px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .search-btn img {
+     filter: brightness(0) invert(1);
+     /* Makes it white */
+     width: 18px;
+     height: 18px;
+ }
+ .filter-dropdown {
+     position: relative;
+     display: inline-block;
+ }
+
+ .filter-dropdown button {
+     background-color: #146C5F;
+     color: white;
+     padding: 10px 16px;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     min-width: 220px;
+     padding: 12px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+     border-radius: 8px;
+     z-index: 100;
+     margin-top: 8px;
+
+     right: 0;
+     /* This ensures the dropdown aligns to the right of the button */
+     left: auto;
+     /* Prevents it from overflowing left */
+     max-width: 90vw;
+     /* Prevents it from overflowing on smaller screens */
+     box-sizing: border-box;
+ }
+ .dropdown-content label {
+     display: block;
+     margin-bottom: 6px;
+     font-size: 14px;
+     cursor: pointer;
+     text-align: left;
+ }
+ .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #146C5F;
+    border-radius: 5px;
+    width: 700px;
+    font-size: 16px;
+    outline: none;
+    margin:0;
+}
+
+.search-btn {
+    background-color: #146C5F;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    filter: brightness(0) invert(1); /* makes icon white */
+}
+.search-btn img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+    /* makes icon white */
+}
+
+.search-btn {
+    background-color: #146C5F;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px
+   
+    
+}
